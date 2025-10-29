@@ -1,0 +1,163 @@
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1"
+
+[window]
+padding = {x = 10, y = 5}
+dynamic_padding = true
+decorations = "none"
+title = "Alacritty@CachyOS"
+opacity = 1
+decorations_theme_variant = "Dark"
+
+[window.dimensions]
+columns = 100
+lines = 30
+
+[window.class]
+instance = "Alacritty"
+general = "Alacritty"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+size = 14
+# offset.x = 2
+# offset.y = 1
+
+[font.normal]
+# family = "monospace"
+# family = "SourceCodePro"
+# family = "FiraCode"
+# family = "InputMonoCompressed"
+family = "TerminessNerdFontMono"
+# family = "ProggyVector"
+# family = "Ac437 ToshibaSat 8x14"
+# family = "Ac437 ToshibaT300 8x8"
+style = "Regular"
+
+[font.bold]
+# family = "ProggyVector"
+family = "TerminessNerdFontMono"
+style = "Bold"
+
+[font.italic]
+# family = "ProggyVector"
+family = "TerminessNerdFontMono"
+style = "Italic"
+
+[font.bold_italic]
+# family = "ProggyVector"
+family = "TerminessNerdFontMono"
+style = "Bold Italic"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[cursor]
+# style = "Underline"
+style = "Block"
+vi_mode_style = "None"
+unfocused_hollow = true
+thickness = 0.15
+
+[mouse]
+hide_when_typing = true
+
+[[mouse.bindings]]
+mouse = "Middle"
+action = "PasteSelection"
+
+[keyboard]
+[[keyboard.bindings]]
+key = "Paste"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "Copy"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Control"
+action = "ClearLogNotice"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Control"
+mode = "~Vi"
+chars = "\f"
+
+[[keyboard.bindings]]
+key = "PageUp"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollPageUp"
+
+[[keyboard.bindings]]
+key = "PageDown"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollPageDown"
+
+[[keyboard.bindings]]
+key = "Home"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollToTop"
+
+[[keyboard.bindings]]
+key = "End"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollToBottom"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Control|Shift"
+action = "SearchForward"
+
+[[keyboard.bindings]]
+key = "B"
+mods = "Control|Shift"
+action = "SearchBackward"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+mode = "Vi"
+action = "ClearSelection"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+# [colors.primary]
+# background = "0x111216"
+
+[general]
+import = [
+	# "~/.config/alacritty/themes/themes/gotham.toml"
+	# "~/.config/alacritty/themes/themes/rose_pine.toml"
+	# "~/.config/alacritty/themes/themes/solarized_osaka.toml"
+	# "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
+	# "~/.config/alacritty/themes/themes/modus.toml"
+	"~/.config/alacritty/themes/themes/modus_operandi_deuteranopia.toml"
+]
+
+live_config_reload = true
+working_directory = "None"

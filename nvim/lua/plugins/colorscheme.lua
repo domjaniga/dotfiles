@@ -1,49 +1,23 @@
-return { 
-
-    "shaunsingh/nord.nvim",
-
+return {
+    "miikanissi/modus-themes.nvim",
     config = function()
-        vim.cmd.colorscheme = 'nord'
+        require("modus-themes").setup({
+            style = "modus_operandi",
+            variant = "deuteranopia",
+            styles = {
+                functions = { italic = true }
+            }
+        })
+
+        vim.cmd([[colorscheme modus]])
     end
 
-    -- 'maxmx03/solarized.nvim',
-    -- lazy = false,
+    -- "abreujp/scholar.nvim",
     -- priority = 1000,
-    -- ---@type solarized.config
-    -- opts = {},
-    -- config = function(_, opts)
-    --     vim.o.termguicolors = true
-    --     vim.o.background = 'dark'
-    --     require('solarized').setup(opts)
-    --     vim.cmd.colorscheme 'solarized'
-    -- end,
-    -- {
-    -- "miikanissi/modus-themes.nvim",
-    -- priority = 1000,
-    --
     -- config = function()
-    --     vim.cmd([[colorscheme modus]])
-    -- end
-    -- },
+    --     require("scholar").setup()
     --
-    -- {
-    --     "craftzdog/solarized-osaka.nvim",
-    --     lazy = false,
-    --     priority = 1000,
-    --     opts = {},
-    -- },
-
-    -- {
-    --     'maxmx03/solarized.nvim',
-    --     lazy = false,
-    --     priority = 1000,
-    --
-    --     require('solarized').setup {
-    --         variant = 'winter',
-    --     },
-    --
-    --     config = function()
-    --         vim.cmd.colorscheme = 'solarized'
-    --     end
-    -- }
+    --     vim.o.background = "dark"  -- or "dark"
+    --     vim.cmd("colorscheme scholar")
+    -- end,
 }
