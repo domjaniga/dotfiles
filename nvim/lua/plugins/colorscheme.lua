@@ -1,17 +1,32 @@
 return {
-    "miikanissi/modus-themes.nvim",
+    --     "miikanissi/modus-themes.nvim",
+    -- config = function()
+    --     require("modus-themes").setup({
+    --         -- style = "modus_operandi",
+    --         style = "modus_vivendi",
+    --         variant = "deuteranopia",
+    --         styles = {
+    --             functions = { italic = true }
+    --         }
+    --     })
+    --
+    --     vim.cmd([[colorscheme modus]])
+    -- end
+    
+
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+
     config = function()
-        require("modus-themes").setup({
-            style = "modus_operandi",
-            variant = "deuteranopia",
-            styles = {
-                functions = { italic = true }
-            }
+        require('solarized-osaka').setup({
+            transparent = true;
         })
 
-        vim.cmd([[colorscheme modus]])
+        vim.cmd([[colorscheme solarized-osaka]])
     end
-
+    
     -- "abreujp/scholar.nvim",
     -- priority = 1000,
     -- config = function()

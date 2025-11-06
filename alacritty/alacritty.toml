@@ -7,7 +7,7 @@ padding = {x = 10, y = 5}
 dynamic_padding = true
 decorations = "none"
 title = "Alacritty@CachyOS"
-opacity = 1
+opacity = 0.98
 decorations_theme_variant = "Dark"
 
 [window.dimensions]
@@ -32,25 +32,42 @@ size = 14
 # family = "SourceCodePro"
 # family = "FiraCode"
 # family = "InputMonoCompressed"
-family = "TerminessNerdFontMono"
+# family = "TerminessNerdFontMono"
 # family = "ProggyVector"
 # family = "Ac437 ToshibaSat 8x14"
-# family = "Ac437 ToshibaT300 8x8"
+# family = "Px437 IBM PS/2thin4"
+# family = "Ac437 ToshibaSat 8x16"
+# family = "Ac437 ToshibaTxL1 8x16"
+family = "Anonymous Pro"
+
+# family = "Mononoki"
+
+# family = "MiscFixedSC613"
 style = "Regular"
 
 [font.bold]
 # family = "ProggyVector"
-family = "TerminessNerdFontMono"
+# family = "TerminessNerdFontMono"
+# family = "Anonymous Pro"
+# family = "Ac437 ToshibaTxL1 8x16"
+# family = "Red Hat Mono"
 style = "Bold"
 
 [font.italic]
 # family = "ProggyVector"
-family = "TerminessNerdFontMono"
+# family = "TerminessNerdFontMono"
+# family = "Ac437 ToshibaTxL1 8x16"
+# family = "Anonymous Pro"
+# family = "Red Hat Mono"
+# style = "Regular"
 style = "Italic"
 
 [font.bold_italic]
 # family = "ProggyVector"
-family = "TerminessNerdFontMono"
+# family = "TerminessNerdFontMono"
+# family = "Ac437 ToshibaTxL1 8x16"
+# family = "Anonymous Pro"
+# family = "Red Hat Mono"
 style = "Bold Italic"
 
 [selection]
@@ -153,10 +170,10 @@ action = "ResetFontSize"
 import = [
 	# "~/.config/alacritty/themes/themes/gotham.toml"
 	# "~/.config/alacritty/themes/themes/rose_pine.toml"
-	# "~/.config/alacritty/themes/themes/solarized_osaka.toml"
+	"~/.config/alacritty/themes/themes/solarized_osaka.toml"
 	# "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
 	# "~/.config/alacritty/themes/themes/modus.toml"
-	"~/.config/alacritty/themes/themes/modus_operandi_deuteranopia.toml"
+	# "~/.config/alacritty/themes/themes/modus_operandi_deuteranopia.toml"
 ]
 
 live_config_reload = true
